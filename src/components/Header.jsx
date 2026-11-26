@@ -38,7 +38,7 @@ export default function Header({
           <div className="flex items-center gap-2 font-medium">
             <Zap className="w-3.5 h-3.5 text-orange-400 fill-orange-400 shrink-0" />
             <span>
-              Express 30-Min Delivery across Karachi, Lahore & Islamabad • Free Delivery on Rs. 2,500+
+              Express 30-Min Delivery across Karachi • Free Delivery on Rs. 2,500+
             </span>
           </div>
           <div className="hidden md:flex items-center gap-4 text-emerald-100">
