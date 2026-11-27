@@ -114,14 +114,16 @@ export default function HomePage({ navigate, onSelectProduct }) {
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white border border-slate-200/80 rounded-2xl p-3.5 flex items-center gap-3"
+              className="h-full bg-white border border-slate-200/80 rounded-2xl p-4 flex flex-col items-start gap-3 sm:flex-row sm:items-center shadow-[0_1px_2px_rgba(15,23,42,0.04)] hover:border-emerald-200 hover:shadow-md transition-all"
             >
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
-                <item.icon className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-xl bg-emerald-50 ring-1 ring-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5" strokeWidth={2.2} />
               </div>
-              <div>
-                <p className="text-xs font-extrabold text-slate-800">{item.title}</p>
-                <p className="text-[11px] text-slate-500">{item.desc}</p>
+              <div className="min-w-0">
+                <p className="text-[13px] font-extrabold text-slate-900 leading-tight">
+                  {item.title}
+                </p>
+                <p className="mt-1 text-[11.5px] text-slate-500 leading-snug">{item.desc}</p>
               </div>
             </div>
           ))}
